@@ -118,21 +118,21 @@ output$hc_bench_sl <- renderHighchart({
         df_red,
         hcaes(x = Period_ID, y = metric, group = Group),
         type = "scatter",
-        marker = list(symbol = "circle"),
+        marker = list(symbol = "circle", radius = 9),
         color = "red"
       ) %>%
       hc_add_series(
         df_green,
         hcaes(x = Period_ID, y = metric, group = Group),
         type = "scatter",
-        marker = list(symbol = "square"),
+        marker = list(symbol = "square", radius = 9),
         color = "lightgreen"
       ) %>%
       hc_add_series(
         df_darkgreen,
         hcaes(x = Period_ID, y = metric, group = Group),
         type = "scatter",
-        marker = list(symbol = "triangle"),
+        marker = list(symbol = "triangle", radius = 9),
         color = "darkgreen"
       )
   } else {
