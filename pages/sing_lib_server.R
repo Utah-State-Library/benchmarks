@@ -11,19 +11,19 @@
 #   imageUrl = "logo.jpeg"
 # )
 
-observe({
-  if (input$metric_sl == "Actual Number") {
-    b_list <- benchmarks2
-  } else {
-    b_list <- benchmarks
-  }
-  updatePickerInput(
-    session,
-    "benchmark_sl",
-    choices = b_list,
-    selected = b_list[1]
-  )
-})
+# observe({
+#   if (input$metric_sl == "Actual Number") {
+#     b_list <- benchmarks2
+#   } else {
+#     b_list <- benchmarks
+#   }
+#   updatePickerInput(
+#     session,
+#     "benchmark_sl",
+#     choices = b_list,
+#     selected = b_list[1]
+#   )
+# })
 
 b_name_sl <- reactive({
   names(benchmarks)[benchmarks == input$benchmark_sl]

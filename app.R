@@ -92,34 +92,8 @@ ui <- fluidPage(
     ))
   ),
 
-  #   tags$style(HTML(
-  #     "table {
-  #     border-collapse: collapse;
-  #   }
-  #   tr, td, th {
-  #     padding: 0em;
-  #   }"
-  #   ))
-  #),
-
-  # tags$style(HTML(
-  #   "
-  #     .shiny-output-error-validation {
-  #       color: green;
-  #       text-align: center;
-  #     }
-  #   "
-  # )),
-
   navbarPage(
     title = "Benchmarks Over Time",
-    #       div(
-    #       "",
-    #       tags$script(HTML(
-    #         "var header = $('.navbar > .container-fluid');
-    # header.append('<div style=\"float:left\"><ahref=\"URL\"><img src=\"usllogo.jpeg\" alt=\"alt\" style=\"float:left;height:50px;\"> </a>`</div>');console.log(header)"
-    #       ))
-    #     ),
 
     source("pages/sing_lib_ui.R", local = TRUE)$value,
     source("pages/dots_ui.R", local = TRUE)$value
